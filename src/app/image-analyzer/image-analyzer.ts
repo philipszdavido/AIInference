@@ -1,9 +1,7 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {firstValueFrom} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {ModelInferenceEngine, ModelPayload} from '../dist/api/InferenceEngine';
-import {SequentialModel} from '../dist/api/Sequential';
-import {Matrix} from "../dist/core/Matrix";
+import {SequentialModel} from "../dist/TensorForge";
 
 @Component({
   selector: 'app-image-analyzer',

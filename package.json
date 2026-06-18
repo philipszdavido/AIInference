@@ -44,6 +44,7 @@
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "@types/plotly.js-dist-min": "^2.3.4",
+    "esbuild": "^0.28.1",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.12",
