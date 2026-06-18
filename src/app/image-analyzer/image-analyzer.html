@@ -1,0 +1,29 @@
+    <section class="card image-analyzer">
+        <h2>28 × 28 Matrix Visualizer</h2>
+        <p class="subtitle">Draw inside the localized grid matrix to feed raw pixels to the network.</p>
+
+        <div class="canvas-workspace">
+            <div class="canvas-wrapper">
+                <canvas id="digit-canvas" width="28" height="28"></canvas>
+                <div class="canvas-controls">
+                    <button id="btn-clear-canvas" class="btn btn-secondary">Clear Grid</button>
+                    <button id="btn-predict-digit" class="btn btn-primary">Run Inference</button>
+                </div>
+            </div>
+
+            <div class="canvas-results">
+                <h3>Network Activation Output</h3>
+                <div id="digit-result-box" class="result-box dynamic-empty">
+                    <span class="placeholder-text">Draw on the canvas and trigger inference to view top predictions.</span>
+                    <div id="prediction-output" class="hidden">
+                        <div class="top-prediction">
+                            <span class="predicted-class-label">Predicted Digit:</span>
+                            <span id="predicted-digit" class="digit-hero">0</span>
+                        </div>
+                        <div id="confidence-breakdown" class="breakdown-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

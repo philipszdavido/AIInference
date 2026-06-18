@@ -1,0 +1,34 @@
+<section class="card text-analyzer">
+  <h2>Spam & Content Detector</h2>
+  <p class="subtitle">Enter message or email text to calculate spam probability metrics.</p>
+
+  <div class="input-group">
+    <textarea [(ngModel)]="emailText" id="spam-input" placeholder="Paste your email or message content here..."></textarea>
+  </div>
+
+  <button (click)="checkMessage()" id="btn-analyze-spam" class="btn btn-primary">Analyze Content</button>
+
+  <div id="spam-result-box" class="result-box" [ngClass]="{ 'hidden': !result}">
+    <div class="metric-container">
+      <span class="label">Classification:</span>
+      @if (result) {
+        <span id="spam-label" class="badge">{{ result.isSpam ? 'SPAM ALERT' : 'Clean / Safe' }}</span>
+      }
+    </div>
+    <div class="progress-bar-wrapper">
+      <label>Spam Confidence Score:</label>
+        @if (result) {
+            <div class="progress-container">
+                <div
+                        class="progress-fill"
+                        [style.width.%]="result.probability"
+                        [ngClass]="result.probability * 100 >= 50 ? 'danger' : 'success'">
+                </div>
+            </div>
+        }
+      @if (result) {
+      <span id="spam-percentage" class="percentage-text">{{ (result.probability * 100).toFixed(2) }}%</span>
+      }
+    </div>
+  </div>
+</section>

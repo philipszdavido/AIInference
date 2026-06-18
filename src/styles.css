@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+:root {
+  --primary-bg: #1e293b;
+  --primary-text: #ffffff;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  --card-radius: 16px;
+
+  .title {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+}
