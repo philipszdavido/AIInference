@@ -1,0 +1,5 @@
+.about-text { font-size: 1rem; color: var(--text-main); line-height: 1.6; margin-top: 1rem; }
+.divider-line { border: 0; border-top: 1px solid var(--border-color); margin: 1.5rem 0; }
+.specs-list-clean { list-style: none; margin-top: 0.7rem; }
+.specs-list-clean li { margin-bottom: 0.75rem; font-size: 0.9rem; color: var(--text-muted); position: relative; padding-left: 1.25rem; }
+.specs-list-clean li::before { content: "✓"; position: absolute; left: 0; color: var(--success); font-weight: bold; }
