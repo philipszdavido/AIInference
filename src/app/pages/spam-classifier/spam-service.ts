@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
-import {ModelInferenceEngine, ModelPayload} from "../dist/TensorForge";
+import {ModelInferenceEngine, ModelPayload} from "../../dist/TensorForge";
 
 @Injectable({
   providedIn: 'root'
