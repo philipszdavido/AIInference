@@ -1,0 +1,51 @@
+<div class="view-layout">
+    <div class="card" style="margin-bottom: 2rem;">
+
+    <div class="view-header">
+        <h2>Hardware Performance Benchmarks</h2>
+        <p>Stress-test in-browser engines to isolate compute thresholds.</p>
+    </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 2rem;">
+        <h2>Execute System Profiling Pipeline</h2>
+        <p class="subtitle">Simulates real-time tensor computations across variable calculation backends.</p>
+        <button class="btn btn-primary">Initialize Test Run</button>
+    </div>
+
+    <div class="card">
+        <h2>Cross-Backend Matrix Comparison</h2>
+        <div style="overflow-x: auto;">
+            <table class="pro-table">
+                <thead>
+                <tr>
+                    <th>Execution Provider</th>
+                    <th>Batch Execution Size</th>
+                    <th>Throughput Speed (Img/sec)</th>
+                    <th>Avg Latency Floor</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>WebGPU Acceleration</strong></td>
+                    <td>32 Tasks</td>
+                    <td>1,420 imgs/sec</td>
+                    <td>1.2 ms</td>
+                </tr>
+                <tr>
+                    <td>WebGL Legacy Engine</td>
+                    <td>32 Tasks</td>
+                    <td>410 imgs/sec</td>
+                    <td>4.8 ms</td>
+                </tr>
+                <tr>
+                    <td>Native CPU Workers</td>
+                    <td>32 Tasks</td>
+                    <td>45 imgs/sec</td>
+                    <td>32.1 ms</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
