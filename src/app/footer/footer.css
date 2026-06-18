@@ -1,0 +1,77 @@
+.pro-footer {
+    width: 100%;
+    padding: 24px 40px;
+    /*background-color: #0f172a;*/
+    /*color: #94a3b8;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    /*border-top: 1px solid #1e293b;*/
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.divider {
+    color: #334155;
+}
+
+.name {
+    /*color: #f8fafc;*/
+    font-weight: 500;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /*color: #94a3b8;*/
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.email-icon {
+    color: #64748b;
+    transition: color 0.2s ease;
+}
+
+.email-link:hover {
+    color: #38bdf8;
+}
+
+.email-link:hover .email-icon {
+    color: #38bdf8;
+}
+
+@media (max-width: 640px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-left {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .divider {
+        display: none;
+    }
+}
