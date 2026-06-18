@@ -1,11 +1,14 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {firstValueFrom} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {SequentialModel} from "../dist/TensorForge";
+import {SequentialModel} from "../../dist/TensorForge";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-image-analyzer',
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './image-analyzer.html',
   styleUrl: './image-analyzer.css',
 })
