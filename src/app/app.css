@@ -26,6 +26,11 @@ body {
     padding: 2rem 1rem;
 }
 
+html, body {
+    /*height: 100%;*/
+    margin: 0;
+}
+
 .app-header {
     max-width: 1200px;
     margin: 0 auto 2.5rem auto;
@@ -45,9 +50,10 @@ body {
 }
 
 .dashboard-container {
+    /*height: 100%;*/
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    /*display: flex;*/
     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
     gap: 2rem;
 }
@@ -58,6 +64,7 @@ body {
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    margin-bottom: 1rem;
 }
 
 .card h2 {
@@ -264,5 +271,104 @@ body {
 
     #digit-canvas {
         width: 100%;
+    }
+}
+
+.nav-tabs {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.nav-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: none;
+    transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-tab:hover {
+    color: #0f172a;
+    background-color: rgba(15, 23, 42, 0.04);
+}
+
+.nav-tab.active {
+    color: #0f172a;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+.view-layout {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .nav-tabs {
+        display: flex;
+        width: 100%;
+    }
+    .nav-tab {
+        flex: 1;
+        text-align: center;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation Row Container */
+.navigation-bar {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Premium Back Button Link Style */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b; /* Soft muted text color */
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+/* Back Arrow Icon Animation Controls */
+.back-icon {
+    transition: transform 0.15s ease;
+}
+
+.btn-back:hover {
+    color: #0f172a;
+    background-color: #f1f5f9;
+}
+
+.btn-back:hover .back-icon {
+    transform: translateX(-3px);
+}
+
+@media (max-width: 640px) {
+    .navigation-bar {
+        margin-bottom: 1rem;
+    }
+    .btn-back {
+        font-size: 0.825rem;
+        padding: 4px 8px;
     }
 }

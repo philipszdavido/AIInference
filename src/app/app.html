@@ -1,8 +1,40 @@
-<header class="app-header">
-  <h1>AI Inference Studio</h1>
-  <p>Running TensorForgejs neural networks completely in-browser.</p>
-</header>
 
-<main class="dashboard-container">
-  <router-outlet />
-</main>
+
+
+    <header class="app-header">
+
+        <nav class="nav-tabs">
+            <a routerLink="/"
+               routerLinkActive="active"
+               [routerLinkActiveOptions]="{ exact: true }"
+               class="nav-tab">Dashboard</a>
+
+            <a routerLink="/models"
+               routerLinkActive="active"
+               class="nav-tab">Models</a>
+
+            <a routerLink="/benchmarks"
+               routerLinkActive="active"
+               class="nav-tab">Benchmarks</a>
+
+            <a routerLink="/settings"
+               routerLinkActive="active"
+               class="nav-tab">Settings</a>
+
+            <a routerLink="/about"
+               routerLinkActive="active"
+               class="nav-tab">About</a>
+        </nav>
+
+          <h1>AI Inference Studio</h1>
+          <p>Running TensorForge.js neural networks completely in-browser.</p>
+
+
+    </header>
+
+    <main class="dashboard-container" style="margin-bottom: 5rem">
+        <router-outlet></router-outlet>
+    </main>
+
+<!--    <app-footer></app-footer>-->
+
