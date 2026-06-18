@@ -1,0 +1,7 @@
+.model-action-bar { margin-bottom: 1.5rem; display: flex; justify-content: flex-end; }
+.model-card { display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
+.model-meta h3 { font-size: 1.2rem; margin: 0.75rem 0 0.25rem 0; font-weight: 600; }
+.model-meta p { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.25rem; }
+.model-specs { border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 0.75rem 0; margin-bottom: 1rem; }
+.spec-item { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.25rem; }
+.spec-item span { color: var(--text-muted); }
