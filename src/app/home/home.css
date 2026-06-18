@@ -1,8 +1,0 @@
-main {
-  display: flex;
-  gap: 5px;
-}
-
-main section {
-  cursor: pointer;
-}

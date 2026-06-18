@@ -1,0 +1,95 @@
+/*main {*/
+/*  display: flex;*/
+/*  gap: 5px;*/
+/*}*/
+
+/*main section {*/
+/*  cursor: pointer;*/
+/*}*/
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.studio-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding-right: 1rem;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.badge-spam { background-color: #eff6ff; color: #2563eb; }
+.badge-image { background-color: #f3e8ff; color: #a855f7; }
+
+.card-text h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.35rem;
+}
+
+.card-text p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+.card-arrow {
+  color: #cbd5e1;
+  transition: color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.studio-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.02), 0 4px 6px -4px rgba(0, 0, 0, 0.02);
+  transform: translateY(-2px);
+}
+
+.studio-card:hover .card-arrow {
+  color: #0f172a;
+  transform: translateX(3px);
+}
+
+@media (max-width: 640px) {
+  .studio-card {
+    padding: 1.25rem;
+  }
+  .card-body {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card-arrow {
+    display: none;
+  }
+}
