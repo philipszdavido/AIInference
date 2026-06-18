@@ -1,0 +1,34 @@
+<div class="view-layout">
+
+    <div class="grid-2">
+
+    <div class="view-header">
+        <div class="card">
+
+        <h2>Platform & Storage Configurations</h2>
+        <p>Manage allocated local variables and low-level compilation options.</p>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="grid-2">
+        <div class="card">
+            <h2>Storage Constraints</h2>
+            <p class="subtitle">Manage persistent storage layers containing cached weights.</p>
+            <div class="storage-row">
+                <div><strong>IndexedDB Cache Volume Usage</strong><p style="font-size: 0.8rem; color: var(--text-muted);">Current load: 53.1 MB allocated</p></div>
+                <button class="btn btn-secondary" style="color: var(--danger);">Purge Sandbox Storage Cache</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Compiler Flags</h2>
+            <p class="subtitle">Directly adjust active execution targets.</p>
+            <label class="toggle-control">
+                <input type="checkbox" checked>
+                <span>Allow experimental 16-bit Floating Point precision calculations (FP16)</span>
+            </label>
+        </div>
+    </div>
+</div>
