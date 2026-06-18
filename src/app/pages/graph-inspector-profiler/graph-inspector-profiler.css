@@ -1,0 +1,6 @@
+.node-graph-trace { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; }
+.trace-node-item { display: flex; align-items: center; gap: 1rem; font-size: 0.85rem; }
+.node-badge { width: 180px; padding: 6px; text-align: center; border-radius: 4px; font-weight: bold; color: #fff; }
+.node-badge.matrix-op { background: var(--primary); }
+.node-badge.activation-op { background: var(--vram-color); }
+.node-time-fill { background: var(--secondary); padding: 6px 12px; border-radius: 4px; font-weight: 600; color: var(--text-main); }

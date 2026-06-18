@@ -1,0 +1,22 @@
+<div class="view-layout">
+    <div class="view-header">
+        <h2>Autograd Node Computation Profiler</h2>
+        <p>Isolate performance drops and parse tracking graphs sequentially.</p>
+    </div>
+
+    <div class="card">
+        <h2>DAG Backpropagation Timeline View</h2>
+        <p class="subtitle">Traces the precise processing runtime split across calculation nodes.</p>
+
+        <div class="node-graph-trace">
+            <div class="trace-node-item">
+                <div class="node-badge matrix-op">MatMul Node [28x28]</div>
+                <div class="node-time-fill" style="width: 65%;">6.2 ms (65% runtime footprint)</div>
+            </div>
+            <div class="trace-node-item">
+                <div class="node-badge activation-op">Tanh Node Activation</div>
+                <div class="node-time-fill" style="width: 20%;">1.9 ms (20% runtime footprint)</div>
+            </div>
+        </div>
+    </div>
+</div>
